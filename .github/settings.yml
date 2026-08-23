@@ -35,6 +35,9 @@ rulesets:
         parameters:
           required_approving_review_count: 1
           dismiss_stale_reviews_on_push: true
+          require_code_owner_review: false
+          require_last_push_approval: false
+          required_review_thread_resolution: false
     bypass_actors:
       - actor_id: 5
         actor_type: RepositoryRole
@@ -45,12 +48,9 @@ rulesets:
       - actor_id: 2
         actor_type: RepositoryRole
         bypass_mode: always
-      - actor_id: 297518
+      - actor_id: 29110
         actor_type: Integration
         bypass_mode: always
-      - actor_id: 21748
-        actor_type: Integration
-        bypass_mode: always
-      - actor_id: 15368
+      - actor_id: 1143301
         actor_type: Integration
         bypass_mode: always
